@@ -1,9 +1,17 @@
 module starter::practica_sui {
     use std::debug::print;
-    use std::string::utf8;
+    use std::string::{String, utf8};
 
-    fun practica() {
-        print(&utf8(b"Hello, World!"));
+    struct Usuario {
+        nombre: String,
+        edad: u8,
+        vivo: bool,
+    }
+
+    fun practica(usuario: Usuario) {
+       
+        if(edad > 18) {
+         print(&utf8(b"Acceso permitido"));
     }
 
     #[test]
