@@ -18,4 +18,5 @@ module starter::practica_sui {
     fun prueba() {
         practica();
     }
+    
 }
